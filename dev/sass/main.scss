@@ -1,9 +1,9 @@
 @import 'grid';
-@import 'coordenadas';
 
 
 
 
+@import 'base/typography';
 
 /*
 
@@ -13,3 +13,4 @@ Tamaños de layout
 @import 'layouts/layout1';
 @import 'layouts/layout2';
 @import 'layouts/layout3';
+@import 'layouts/coordenadas';
