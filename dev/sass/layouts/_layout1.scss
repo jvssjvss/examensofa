@@ -1,0 +1,65 @@
+
+$dropdown-color: #256183;
+@media (min-width: 280px){
+
+    .layout{
+        display: grid;
+        height: 100vh;
+        width: 100vw;
+        grid-gap:3px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'a1 b1 c1 d1 e1'
+        'a2 b2 c2 d2 e2'
+        'a3 b3 c3 d3 e3'
+        'a4 b4 c4 d4 e4'
+        'a5 b5 c5 d5 e5'
+        'a6 b6 c6 d6 e6'
+        'a7 b7 c7 d7 e7'
+        'a8 b8 c8 d8 e8'
+        'a9 b9 c9 d9 e9';
+        
+
+    }
+
+    
+    
+
+    .drop{
+        display: none;
+
+    }
+        
+
+
+
+        
+    
+    #hamburguer:checked ~ .drop{
+        position: absolute; 
+        display:  grid;
+        height: 100vh;
+        width: 100vw;
+         grid-column-start: a1;
+         grid-column-end: e2;
+         grid-row-start: a1;
+         grid-row-end: a9;
+         background-color: $dropdown-color;
+         z-index: 100;
+         grid-template-areas:
+
+         'a1 b1 c1 d1 e1'
+         'a2 b2 c2 d2 e2'
+         'a3 b3 c3 d3 e3'
+         'a4 b4 c4 d4 e4'
+         'a5 b5 c5 d5 e5'
+         'a6 b6 c6 d6 e6'
+         'a7 b7 c7 d7 e7'
+         'a8 b8 c8 d8 e8'
+         'a9 b9 c9 d9 e9';}
+            
+
+}
+
+// #checkbox:checked ~ = :hover
